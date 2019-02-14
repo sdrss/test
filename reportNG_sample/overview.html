@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/reportng.css"/>
+</head>
+<body>
+	<div id="overview" class="menuItem" style="display:inline">
+		<h3 class="normal">Overview</h3>
+		<div class="container">
+			<div class="well well-large">
+				<b>Tests</b>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th scope="col" width="300px;">#</th>
+						  	<th scope="col" width="300px;" style="text-align:center">Regression</th>
+						  	<th scope="col" width="300px;" style="text-align:center">New Features</th>
+							<th scope="col" width="300px;" style="text-align:center">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row" class="passTitle">Pass</th>
+							<td align="center">10</td>
+						  	<td align="center">1</td>
+						  	<td align="center">11</td>
+						</tr>
+						<tr>
+							<th scope="row" class="failTitle">Fail</th>
+							<td align="center">1</td>
+							<td align="center">1</td>
+							<td align="center">2</td>
+						</tr>
+						<tr>
+							<th scope="row" class="skipTitle">Skip</th>
+							<td align="center">1</td>
+							<td align="center">1</td>
+							<td align="center">2</td>
+						</tr>
+						<tr>
+							<th scope="row" class="KnownDefectTitle">Known</th>
+							<td align="center">1</td>
+							<td align="center">0</td>
+							<td align="center">1</td>
+						</tr>
+						<tr>
+							<th scope="row" class="fixedTitle">Fixed</th>
+							<td align="center">1</td>
+							<td align="center">0</td>
+							<td align="center">1</td>
+						</tr>
+						<tr>
+							<th scope="row" class="summary">Summary</th>
+							<td align="center">14</td>
+							<td align="center">3</td>
+							<td align="center">17</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th scope="col" width="300px;">#</th>
+						  	<th scope="col" width="300px;" style="text-align:center">Regression</th>
+						  	<th scope="col" width="300px;" style="text-align:center">New Features</th>
+							<th scope="col" width="300px;" style="text-align:center">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row" class="summary">Success Rate</th>
+							<td align="center"><div class="progress" role="progressbar" style="width: 100%; background-color:red; color:white">85.0%</div></td>
+							<td align="center"><div class="progress" role="progressbar" style="width: 100%; background-color:red; color:white">33.0%</div></td>
+							<td align="center"><div class="progress" role="progressbar" style="width: 100%; background-color:red; color:white">76.0%</div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="container">
+			<div class="well well-large">
+				<b>Issues</b>
+				<table class="table table-bordered">
+				<thead>
+				<tr>
+					<th scope="col" width="300px;">#</th>
+				  	<th scope="col">Total</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row" class="failTitle">New</th>
+						<td><a href="newIssues.html">2</a></td>
+					</tr>
+					<tr>
+						<th scope="row" class="KnownDefectTitle">Known</th>
+						<td><a href="knownIssues.html">1</a></td>
+					</tr>
+					<tr>
+						<th scope="row" class="fixedTitle">Fixed</th>
+						<td><a href="fixedIssues.html">1</a></td>
+					</tr>
+				</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="container">
+			<div class="well well-large">
+				<b>Release Status</b>
+				<p><font color="red">You should not Proceed with a new Release !</font><br><ul><li>There is <a href="newIssues.html"/>one</a> regression failure, affecting 1 test.</li><li>There is <a href="newIssues.html"/>one</a> failure related with new features, affecting 1 test.</li><li>The new feature with description '<a href="featuresNew.html#This is a new Feature" style="color:red">This is a new Feature</a>' has failures and should not be announced !</li></ul></p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="well well-large">
+				<b>Title</b>
+				<p>Test Results Report</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="well well-large">
+				<b>Execution</b>
+				<table class="table">
+				  <tr>
+				    <th>Start Time : </th>
+				    <th>Thu Feb 14 15:21:02 EET 2019</th> 
+				  </tr>
+				  <tr>
+				    <th>End Time : </th>
+				    <th>Thu Feb 14 15:21:03 EET 2019</th> 
+				  </tr>
+				  <tr>
+				    <th>Total Time : </th>
+				    <th>00:00:00</th> 
+				  </tr>
+				  <tr>
+				    <th>Output Path : </th>
+				    <th>C:\Users\sokratis.sidereas\git\ReportNGTests\test-output\html</th> 
+				  </tr>
+				  <tr>
+				    <th>Host : </th>
+				    <th>sokratis.sidereas@ssidereas&nbsp;/&nbsp;Java 1.8.0_25 (Oracle Corporation)&nbsp;/&nbsp;Windows 7 6.1 (amd64)</th> 
+				  </tr>
+				</table>
+			</div>
+		</div>
+		<div class="container">
+			<div class="well well-large">
+				<b>Info</b>
+				<p>Generated by <a href="http://www.testng.org" target="_top">TestNG</a> with <a href="https://github.com/sdrss/reportNG" target="_top">ReportNG v2.0.1</a><br> at 15:21 EET on Thursday 14 February 2019<br/></p>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>
