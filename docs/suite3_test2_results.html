@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>Test 3</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>org.uncommons.test.Test6</th> 
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>Test ReportNG Suite 3</th> 
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>C:\Users\sokratis.sidereas\git\ReportNGTests\src\test\resources\TemplateTest4.xml</th> 
+	  </tr>
+	  	  <tr>
+	    <th>Feature Description : </th>
+	    <th>Feature A</th> 
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th>00:00:02</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	    <th>2</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th><font color="green">PASS</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+								<tr>
+		<td class="time">1557330615400</td>
+		<td class="header passedConfig" colspan="4" onClick="toggleElement('73a55c24-ae9b-438f-8a93-b64df7389bb0','block');changeSingleIcon('span-73a55c24-ae9b-438f-8a93-b64df7389bb0');" title="Click to expand/collapse" style="cursor: pointer;">
+	 	<div style="float:left;">Class&nbsp;:&nbsp;org.uncommons.test.Test6</div>
+		<div style="float:right;">@BeforeClass&nbsp;Passed Configuration&nbsp;<span id='span-73a55c24-ae9b-438f-8a93-b64df7389bb0' class="glyphicon glyphicon-menu-down"></span></div>
+		</td>
+	</tr>
+				<tr>
+		<td class="time">1557330615400</td>
+		<td class="methodConfiguration">
+				<span class="description"><b>Method: </b>before</span><br>
+				<span class="duration"><b>Duration: </b>0.001s</span><br>
+		</td>
+		<td class="resultConfiguration">
+																	<div class="stackTrace" id="73a55c24-ae9b-438f-8a93-b64df7389bb0">
+								    			        	This is a BeforeClass Method<br>
+		        		   										</div>
+				</td>
+	</tr>
+		<tr>
+		<td class="time">1557330615400</td>
+		<td class="header passedConfig" colspan="4" onClick="toggleElement('a455062b-6ffc-411b-8010-734d0e6f62b2','block');changeSingleIcon('span-a455062b-6ffc-411b-8010-734d0e6f62b2');" title="Click to expand/collapse" style="cursor: pointer;">
+	 	<div style="float:left;">Class&nbsp;:&nbsp;org.uncommons.test.Test6</div>
+		<div style="float:right;">@BeforeSuite&nbsp;Passed Configuration&nbsp;<span id='span-a455062b-6ffc-411b-8010-734d0e6f62b2' class="glyphicon glyphicon-menu-down"></span></div>
+		</td>
+	</tr>
+				<tr>
+		<td class="time">1557330615400</td>
+		<td class="methodConfiguration">
+				<span class="description"><b>Method: </b>beforeSuite</span><br>
+				<span class="duration"><b>Duration: </b>0.000s</span><br>
+		</td>
+		<td class="resultConfiguration">
+																	<div class="stackTrace" id="a455062b-6ffc-411b-8010-734d0e6f62b2">
+								    			        	This is a BeforeSuite Method<br>
+		        		   										</div>
+				</td>
+	</tr>
+		<tr>
+		<td class="time">1557330617436</td>
+		<td class="header passedConfig" colspan="4" onClick="toggleElement('29404fc3-868f-446d-becc-d106823782f6','block');changeSingleIcon('span-29404fc3-868f-446d-becc-d106823782f6');" title="Click to expand/collapse" style="cursor: pointer;">
+	 	<div style="float:left;">Class&nbsp;:&nbsp;org.uncommons.test.Test6</div>
+		<div style="float:right;">@AfterClass&nbsp;Passed Configuration&nbsp;<span id='span-29404fc3-868f-446d-becc-d106823782f6' class="glyphicon glyphicon-menu-down"></span></div>
+		</td>
+	</tr>
+				<tr>
+		<td class="time">1557330617436</td>
+		<td class="methodConfiguration">
+				<span class="description"><b>Method: </b>after</span><br>
+				<span class="duration"><b>Duration: </b>0.000s</span><br>
+		</td>
+		<td class="resultConfiguration">
+																	<div class="stackTrace" id="29404fc3-868f-446d-becc-d106823782f6">
+								    			        	This is a AfterClass Method<br>
+		        		   										</div>
+				</td>
+	</tr>
+						
+				
+				
+												<tr>
+			<td class="time">1557330616388</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('761b302c-685c-4d5c-bacc-f528912aa56b','block');changeSingleIcon('span-761b302c-685c-4d5c-bacc-f528912aa56b');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;">Class&nbsp;:&nbsp;org.uncommons.test.Test6</div>
+			<div style="float:right;">@Test&nbsp;Passed&nbsp;<span id='span-761b302c-685c-4d5c-bacc-f528912aa56b' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1557330616388</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>test2</span><br>
+			<span class="description"><b>Description: </b>Description for test step#2</span><br>
+					<span class="duration"><b>Duration: </b>1.048s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="761b302c-685c-4d5c-bacc-f528912aa56b" style="display: block;">
+												This is test Step 2<br>
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1557330615401</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('b5d87856-5399-415e-ad99-965c1aeff65e','block');changeSingleIcon('span-b5d87856-5399-415e-ad99-965c1aeff65e');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;">Class&nbsp;:&nbsp;org.uncommons.test.Test6</div>
+			<div style="float:right;">@Test&nbsp;Passed&nbsp;<span id='span-b5d87856-5399-415e-ad99-965c1aeff65e' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1557330615401</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>test1</span><br>
+			<span class="description"><b>Description: </b>Description for test step#1</span><br>
+					<span class="duration"><b>Duration: </b>0.985s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">null</span><br>
+				<div class="stackTrace" id="b5d87856-5399-415e-ad99-965c1aeff65e" style="display: block;">
+					</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>

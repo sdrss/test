@@ -8,29 +8,48 @@
 	<script type="text/javascript" src="js/canvasjs.min.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/reportng.css" />
+	<script type="text/javascript">  
+    	$(document).ready(function () {  
+	            $('tr.parent')  
+	                .css("cursor", "pointer")  
+	                .attr("title", "Click to expand/collapse")  
+	                .click(function () {  
+	                    $(this).siblings('.child-' + this.id).toggle();  
+	                });  
+	            $('tr[@class^=child-]').hide().children('td');  
+	    });
+	    function changeIcon(elementId) {
+			if ($('#'+elementId).hasClass('glyphicon glyphicon-minus')){
+				$('#'+elementId).removeClass('glyphicon glyphicon-minus').toggleClass('glyphicon glyphicon-plus');
+			}else{
+				$('#'+elementId).removeClass('glyphicon glyphicon-plus').toggleClass('glyphicon glyphicon-minus');
+			}
+		}
+    </script>
 </head>
 <body>
 <h3 class="fixedTitle">Fixed</h3>
-<div>		
-	<div class="well well-large">
-		<table class="table table-bordered">
+<div>
+		<div class="well well-large">
+	<h4>Regression Issues</h4>
+		<table class="table table-bordered" width="100%;">
 			<thead>
 				<tr>
-					<th scope="col" width="300px;">Issues</th>
-					<th scope="col" width="300px;">Suite Name</th>
-					<th scope="col" width="300px;">Test Name</th>
-				  	<th scope="col" width="300px;">Test Class</th>
-				  	<th scope="col" width="300px;">Regression</th>
+					<th scope="col">Issues</th>
+					<th scope="col">Suite Name</th>
+					<th scope="col">Test Name</th>
+				  	<th scope="col">Test Class</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-<td rowspan="1" style="vertical-align:middle" class="break-word">Jira Ticket XXXFIXEDXXX</td><td style="vertical-align:middle"><a href="suites_overview.html#Test ReportNG Suite 2">Test ReportNG Suite 2</a></td><td style="vertical-align:middle"><a href="suite2_test5_results.html">Test a Fixed</a></td><td class="break-word" style="vertical-align:middle">org.uncommons.test.Test5_Fixed</td><td style="vertical-align:middle">true</td></tr>
+<td rowspan="1" style="vertical-align:middle" class="break-word">Jira Ticket 78910</td><td style="vertical-align:middle"><a href="suites_overview.html#Test ReportNG Suite 2">Test ReportNG Suite 2</a></td><td style="vertical-align:middle"><a href="suite2_test5_results.html">Test 5</a></td><td class="break-word" style="vertical-align:middle">org.uncommons.test.Test5_Fixed</td></tr>
 
 			</tbody>
 	</table>
 	</div>
-</div>	
 		
+		
+	</div>
 </body>
 </html>

@@ -8,33 +8,49 @@
 	<script type="text/javascript" src="js/canvasjs.min.js"></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link href="css/reportng.css" rel="stylesheet" />
+	<script type="text/javascript">  
+    	$(document).ready(function () {  
+	            $('tr.parent')  
+	                .css("cursor", "pointer")  
+	                .attr("title", "Click to expand/collapse")  
+	                .click(function () {  
+	                    $(this).siblings('.child-' + this.id).toggle();  
+	                });
+	                $('tr.parent')  
+	                .css("cursor", "pointer")  
+	                .attr("title", "Click to expand/collapse")  
+	                .click();  
+	    });
+	    function changeIcon(elementId) {
+			if ($('#'+elementId).hasClass('glyphicon glyphicon-minus')){
+				$('#'+elementId).removeClass('glyphicon glyphicon-minus').toggleClass('glyphicon glyphicon-plus');
+			}else{
+				$('#'+elementId).removeClass('glyphicon glyphicon-plus').toggleClass('glyphicon glyphicon-minus');
+			}
+		}
+    </script>
 </head>
 <body>
 <h3 class="normal">New Features</h3>
 <div>
 	<div class="well well-large">
-		<table class="table table-bordered">
+		<table class="table table-bordered" width="100%;">
 			<thead>
 				<tr>
-					<th scope="col" width="300px;">Feature Description</th>
-					<th scope="col" width="300px;">Suite Name</th>
-					<th scope="col" width="300px;">Test Name</th>
-				  	<th scope="col" width="300px;" class="break-word">Test Class</th>
-				  	<th scope="col" width="300px;">Results</th>
-				  	<th scope="col" width="300px;">Status</th>
+					<th scope="col">#</th>
+					<th scope="col" colspan="2">Feature Description</th>
+				  	<th scope="col" colspan="2">Overall Status</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-<td rowspan="1" style="vertical-align:middle" id="This is a new Feature">This is a new Feature</td>
-<td style="vertical-align:middle"><a href="suites_overview.html#Test ReportNG Suite 2">Test ReportNG Suite 2</a></td>
-<td style="vertical-align:middle"><a href="suite2_test3_results.html">Test a Skip</a></td>
-<td class="break-word" style="vertical-align:middle">org.uncommons.test.Test3_Skip</td>
-<td>
-<div><table class="table">
-<tr class="passed number"><th>PASS</th><th>1</th></tr><tr class="failed number"><th>FAIL</th><th>1</th></tr><tr class="skipped number"><th>SKIP</th><th>1</th></tr></table></div>
-</td>
-<td rowspan="1" style="vertical-align:middle;text-align:center;"><font color="red">FAIL</font></td>
+				<tr class="parent" id="row1" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-495e8616-3b2f-46b1-b5ba-1834216df0e3'); ">
+<td><span id="span-495e8616-3b2f-46b1-b5ba-1834216df0e3" class="glyphicon glyphicon-minus"></span></td>
+<td colspan="2" id="This is a new Feature">This is a new Feature</td><td colspan="2"><font color="red">FAIL</font></td>
+</tr><tr class="child-row1" style="display: table-row;"><td></td><td><i>Suite Name</i></td><td><i>Test Name</i></td><td><i>Class Name</i></td><td><i>Tests</i></td></tr><tr class="child-row1" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 2">Test ReportNG Suite 2</a></td>
+<td><a href="suite2_test3_results.html">Test 3</a></td>
+<td class="break-word">org.uncommons.test.Test3_Skip</td>
+<td><div><table class="table">
+<tr class="passed number"><th>PASS</th><th>1</th></tr><tr class="failed number"><th>FAIL</th><th>1</th></tr><tr class="skipped number"><th>SKIP</th><th>1</th></tr></table></div></td>
 </tr>
 
 			</tbody>

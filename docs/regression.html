@@ -8,49 +8,76 @@
 	<script type="text/javascript" src="js/canvasjs.min.js"></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link href="css/reportng.css" rel="stylesheet" />
+	<script type="text/javascript">  
+	    $(document).ready(function () {  
+	            $('tr.parent')  
+	                .css("cursor", "pointer")  
+	                .attr("title", "Click to expand/collapse")  
+	                .click(function () {  
+	                    $(this).siblings('.child-' + this.id).toggle();  
+	                });  
+	                $('tr.parent')  
+	                .css("cursor", "pointer")  
+	                .attr("title", "Click to expand/collapse")  
+	                .click();
+	    });
+	    function changeIcon(elementId) {
+			if ($('#'+elementId).hasClass('glyphicon glyphicon-minus')){
+				$('#'+elementId).removeClass('glyphicon glyphicon-minus').toggleClass('glyphicon glyphicon-plus');
+			}else{
+				$('#'+elementId).removeClass('glyphicon glyphicon-plus').toggleClass('glyphicon glyphicon-minus');
+			}
+		}
+    </script>
 </head>
 <body>
 <h3 class="normal">Regression</h3>	
 <div>	
 	<div class="well well-large">
-		<table class="table table-bordered">
+		<table class="table table-bordered" width="100%;">
 			<thead>
 				<tr>
-					<th scope="col" width="300px;">Feature Description</th>
-					<th scope="col" width="300px;">Suite Name</th>
-					<th scope="col" width="300px;">Test Name</th>
-				  	<th scope="col" width="300px;" class="break-word">Test Class</th>
-				  	<th scope="col" width="300px;">Results</th>
-				  	<th scope="col" width="300px;">Status</th>
+					<th scope="col">#</th>
+					<th scope="col" colspan="2">Feature Description</th>
+				  	<th scope="col" colspan="2">Overall Status</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-<td rowspan="3" style="vertical-align:middle" id="This is a Feature">This is a Feature</td>
-<td style="vertical-align:middle"><a href="suites_overview.html#Test ReportNG Suite 1">Test ReportNG Suite 1</a></td>
-<td style="vertical-align:middle"><a href="suite1_test1_results.html">Test1 All Success</a></td>
-<td class="break-word" style="vertical-align:middle">org.uncommons.test.Test1</td>
-<td>
-<div><table class="table">
-<tr class="passed number"><th>PASS</th><th>2</th></tr></table></div>
-</td>
-<td rowspan="3" style="vertical-align:middle;text-align:center;"><font color="green">PASS</font></td>
+				<tr class="parent" id="row1" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-2b55272b-5fea-413a-bf33-ad87949a4de7'); ">
+<td><span id="span-2b55272b-5fea-413a-bf33-ad87949a4de7" class="glyphicon glyphicon-minus"></span></td>
+<td colspan="2" id="Feature A">Feature A</td><td colspan="2"><font color="green">PASS</font></td>
+</tr><tr class="child-row1" style="display: table-row;"><td></td><td><i>Suite Name</i></td><td><i>Test Name</i></td><td><i>Class Name</i></td><td><i>Tests</i></td></tr><tr class="child-row1" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 3">Test ReportNG Suite 3</a></td>
+<td><a href="suite3_test1_results.html">Test 1</a></td>
+<td class="break-word">org.uncommons.test.Test6</td>
+<td><div><table class="table">
+<tr class="passed number"><th>PASS</th><th>2</th></tr></table></div></td>
 </tr>
-<td style="vertical-align:middle"><a href="suites_overview.html#Test ReportNG Suite 1">Test ReportNG Suite 1</a></td>
-<td style="vertical-align:middle"><a href="suite1_test2_results.html">Test2 All Success</a></td>
-<td class="break-word" style="vertical-align:middle">org.uncommons.test.Test1</td>
-<td>
-<div><table class="table">
-<tr class="passed number"><th>PASS</th><th>2</th></tr></table></div>
-</td>
+<tr class="child-row1" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 3">Test ReportNG Suite 3</a></td>
+<td><a href="suite3_test2_results.html">Test 3</a></td>
+<td class="break-word">org.uncommons.test.Test6</td>
+<td><div><table class="table">
+<tr class="passed number"><th>PASS</th><th>2</th></tr></table></div></td>
 </tr>
-<td style="vertical-align:middle"><a href="suites_overview.html#Test ReportNG Suite 2">Test ReportNG Suite 2</a></td>
-<td style="vertical-align:middle"><a href="suite2_test1_results.html">Test All Success</a></td>
-<td class="break-word" style="vertical-align:middle">org.uncommons.test.Test1</td>
-<td>
-<div><table class="table">
-<tr class="passed number"><th>PASS</th><th>2</th></tr></table></div>
-</td>
+<tr class="parent" id="row2" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-ba44b8ca-55d0-4cbd-951d-954b4f1be647'); ">
+<td><span id="span-ba44b8ca-55d0-4cbd-951d-954b4f1be647" class="glyphicon glyphicon-minus"></span></td>
+<td colspan="2" id="Feature B">Feature B</td><td colspan="2"><font color="green">PASS</font></td>
+</tr><tr class="child-row2" style="display: table-row;"><td></td><td><i>Suite Name</i></td><td><i>Test Name</i></td><td><i>Class Name</i></td><td><i>Tests</i></td></tr><tr class="child-row2" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 1">Test ReportNG Suite 1</a></td>
+<td><a href="suite1_test1_results.html">Test1</a></td>
+<td class="break-word">org.uncommons.test.Test1</td>
+<td><div><table class="table">
+<tr class="passed number"><th>PASS</th><th>2</th></tr></table></div></td>
+</tr>
+<tr class="child-row2" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 1">Test ReportNG Suite 1</a></td>
+<td><a href="suite1_test2_results.html">Test2</a></td>
+<td class="break-word">org.uncommons.test.Test1</td>
+<td><div><table class="table">
+<tr class="passed number"><th>PASS</th><th>2</th></tr></table></div></td>
+</tr>
+<tr class="child-row2" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 2">Test ReportNG Suite 2</a></td>
+<td><a href="suite2_test1_results.html">Test 1</a></td>
+<td class="break-word">org.uncommons.test.Test1</td>
+<td><div><table class="table">
+<tr class="passed number"><th>PASS</th><th>2</th></tr></table></div></td>
 </tr>
 
 			</tbody>

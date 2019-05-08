@@ -17,13 +17,13 @@
 	});
   </script>
 </head>
-<body onload="doParse(); return false;" onkeypress="expandAll();">
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
 <div class="well well-large">
 	<b>Test Info</>
 	<table class="table">
 	  <tr>
 	    <th>Test Name : </th>
-	    <th>Test2 All Success</th> 
+	    <th>Test2</th> 
 	  </tr>
 	  <tr>
 	    <th>Test Class : </th>
@@ -39,7 +39,7 @@
 	  </tr>
 	  	  <tr>
 	    <th>Feature Description : </th>
-	    <th>This is a Feature</th> 
+	    <th>Feature B</th> 
 	  </tr>
 	  	  <tr>
 	    <th>Total Time : </th>
@@ -59,7 +59,7 @@
 	<div class="row">
 		<div class="col-xs-12">
 	        <div class="text-right">
-	            <button id="hideResults" type="button" class="btn btn-success" onclick="expandAll(this);" onkeypress="expandAll(this);" class="btn pull-right">Hide Pass</button>
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
 	        </div>
 	    </div>
 	</div>
@@ -73,64 +73,141 @@
 		</thead>
 		<tbody>
 		
-				
-				
+									<tr>
+		<td class="time">1557330604221</td>
+		<td class="header failedConfig" colspan="4">
+		<div style="float:left;">Class&nbsp;:&nbsp;org.uncommons.test.Test1</div>
+		<div style="float:right;">@AfterClass&nbsp;Failed Configuration&nbsp;<span id='span-17c0a2f9-899b-40e1-a340-40f68f9f3667' class="glyphicon glyphicon-menu-down"></span></div>
+		</td>
+	</tr>
+			<tr>
+		<td class="time">1557330604221</td>
+		<td class="methodConfiguration">
+				<span class="description"><b>Method: </b>after</span><br>
+				<span class="duration"><b>Duration: </b>0.000s</span><br>
+		</td>
+		<td class="resultConfiguration">
+																	<div class="noCollapse" id="17c0a2f9-899b-40e1-a340-40f68f9f3667">
+								    			        	This is a AfterClass Method<br>
+		        		   								<a href="javascript:toggleElement('exception-17c0a2f9-899b-40e1-a340-40f68f9f3667','block')" title="Click to expand/collapse"><b>java.lang.Exception: After Class failure</b></a><br>
+		    <div class="stackTrace" id="exception-17c0a2f9-899b-40e1-a340-40f68f9f3667">
+							org.uncommons.test.Test1.after(Test1.java:38)<br>
+							sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>
+							sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br>
+							sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>
+							java.lang.reflect.Method.invoke(Method.java:483)<br>
+							org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br>
+							org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br>
+							org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)<br>
+							org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br>
+							org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br>
+							org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:214)<br>
+							org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>
+							org.testng.TestRunner.privateRun(TestRunner.java:648)<br>
+							org.testng.TestRunner.run(TestRunner.java:505)<br>
+							org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br>
+							org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br>
+							org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br>
+							org.testng.SuiteRunner.run(SuiteRunner.java:364)<br>
+							org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>
+							org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br>
+							org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br>
+							org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)<br>
+							org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br>
+							org.testng.TestNG.runSuites(TestNG.java:1049)<br>
+							org.testng.TestNG.run(TestNG.java:1017)<br>
+							org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br>
+							org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>
+							org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+									</div>
+							</div>
+				</td>
+	</tr>
 						
+				
+								<tr>
+		<td class="time">1557330602200</td>
+		<td class="header passedConfig" colspan="4" onClick="toggleElement('f1fb2d84-b37e-4cd8-8270-846fcf7ce096','block');changeSingleIcon('span-f1fb2d84-b37e-4cd8-8270-846fcf7ce096');" title="Click to expand/collapse" style="cursor: pointer;">
+	 	<div style="float:left;">Class&nbsp;:&nbsp;org.uncommons.test.Test1</div>
+		<div style="float:right;">@BeforeClass&nbsp;Passed Configuration&nbsp;<span id='span-f1fb2d84-b37e-4cd8-8270-846fcf7ce096' class="glyphicon glyphicon-menu-down"></span></div>
+		</td>
+	</tr>
+				<tr>
+		<td class="time">1557330602200</td>
+		<td class="methodConfiguration">
+				<span class="description"><b>Method: </b>before</span><br>
+				<span class="duration"><b>Duration: </b>0.000s</span><br>
+		</td>
+		<td class="resultConfiguration">
+																	<div class="stackTrace" id="f1fb2d84-b37e-4cd8-8270-846fcf7ce096">
+								    			        	This is a BeforeClass Method<br>
+		        		   										</div>
+				</td>
+	</tr>
+		<tr>
+		<td class="time">1557330600101</td>
+		<td class="header passedConfig" colspan="4" onClick="toggleElement('642c334f-b1ed-4cf9-b596-15da057c6b90','block');changeSingleIcon('span-642c334f-b1ed-4cf9-b596-15da057c6b90');" title="Click to expand/collapse" style="cursor: pointer;">
+	 	<div style="float:left;">Class&nbsp;:&nbsp;org.uncommons.test.Test1</div>
+		<div style="float:right;">@BeforeSuite&nbsp;Passed Configuration&nbsp;<span id='span-642c334f-b1ed-4cf9-b596-15da057c6b90' class="glyphicon glyphicon-menu-down"></span></div>
+		</td>
+	</tr>
+				<tr>
+		<td class="time">1557330600101</td>
+		<td class="methodConfiguration">
+				<span class="description"><b>Method: </b>beforeSuite</span><br>
+				<span class="duration"><b>Duration: </b>0.001s</span><br>
+		</td>
+		<td class="resultConfiguration">
+																	<div class="stackTrace" id="642c334f-b1ed-4cf9-b596-15da057c6b90">
+								    			        	This is a BeforeSuite Method<br>
+		        		   										</div>
+				</td>
+	</tr>
 						
 				
 				
-						
-				    				    <tr>
-					<td class="time">1550159045526+0</td>
-					<td class="header passed">test1</td>
-					<th colspan="3" class="header passed"> <a href="javascript:toggleElement('1550159045526+0', 'block')" title="Click to expand/collapse">Passed Tests</a></th>
-			    </tr>
-		    	    				
-	<tr>
-		<td class="time">1550159045526+0</td>
-		  	<td class="methodTest">
-			    			    			    
-			    			    	<span class="description"><b>Description: </b>Description for test step#1</span><br>
-			    			    			    			    			    <span class="duration"><b>Duration: </b>1.024s</span><br>
-		  	</td>
-	  		<td class="result">
-		  				  					  						  					<div class="stackTrace" id="1550159045526+0">
-		  						  								    			    				
-			    		    	
-			    		    			    		<div class="testOutput">
-		      					        				          		This is test Step 1 and this is a sample of 'Jason formatter' : <br>
-			        			      					        				          		<div id="inputcontainer"><textarea class="text" rows="1" hidden="true">{"id": 123,  "name": "Pankaj",  "permanent": true,  "address": {    "street": "Albany Dr",    "city": "San Jose","zipcode": 95129  },  "phoneNumbers": [    123456,    987654  ],  "role": "Manager",  "cities": [    "Los Angeles",    "New York"  ],"properties": {    "age": "29 years",    "salary": "1000 USD"  }}</textarea></div><div id="output" class="output"></div><br>
-			        			      				    		</div>
-		    			    	
-						    		  		</td>
-	  			  		</div>
-					</tr>
-						    				    <tr>
-					<td class="time">1550159046550+1</td>
-					<td class="header passed">test2</td>
-					<th colspan="3" class="header passed"> <a href="javascript:toggleElement('1550159046550+1', 'block')" title="Click to expand/collapse">Passed Tests</a></th>
-			    </tr>
-		    	    				
-	<tr>
-		<td class="time">1550159046550+1</td>
-		  	<td class="methodTest">
-			    			    			    
-			    			    	<span class="description"><b>Description: </b>Description for test step#2</span><br>
-			    			    			    			    			    <span class="duration"><b>Duration: </b>0.982s</span><br>
-		  	</td>
-	  		<td class="result">
-		  				  					  						  					<div class="stackTrace" id="1550159046550+1">
-		  						  								    			    				
-			    		    	
-			    		    			    		<div class="testOutput">
-		      					        				          		This is test Step 2<br>
-			        			      					        				          		Test please do something<br>
-			        			      				    		</div>
-		    			    	
-						    		  		</td>
-	  			  		</div>
-					</tr>
-							  
+												<tr>
+			<td class="time">1557330602200</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('4a1f439e-9777-4557-b294-06cdc5af8138','block');changeSingleIcon('span-4a1f439e-9777-4557-b294-06cdc5af8138');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;">Class&nbsp;:&nbsp;org.uncommons.test.Test1</div>
+			<div style="float:right;">@Test&nbsp;Passed&nbsp;<span id='span-4a1f439e-9777-4557-b294-06cdc5af8138' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1557330602200</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>test1</span><br>
+			<span class="description"><b>Description: </b>Description for test step#1</span><br>
+					<span class="duration"><b>Duration: </b>1.006s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="4a1f439e-9777-4557-b294-06cdc5af8138" style="display: block;">
+												This is test Step 1 and this is a sample of 'Jason formatter' : <br>
+												<div><textarea class="text" rows="1" hidden="true">{"id": 123,  "name": "Pankaj",  "permanent": true,  "address": {    "street": "Albany Dr",    "city": "San Jose","zipcode": 95129  },  "phoneNumbers": [    123456,    987654  ],  "role": "Manager",  "cities": [    "Los Angeles",    "New York"  ],"properties": {    "age": "29 years",    "salary": "1000 USD"  }}</textarea></div><div id="output" class="output"></div><br>
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1557330603206</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('654115ef-9444-4338-9895-c61790f3ed39','block');changeSingleIcon('span-654115ef-9444-4338-9895-c61790f3ed39');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;">Class&nbsp;:&nbsp;org.uncommons.test.Test1</div>
+			<div style="float:right;">@Test&nbsp;Passed&nbsp;<span id='span-654115ef-9444-4338-9895-c61790f3ed39' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1557330603206</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>test2</span><br>
+			<span class="description"><b>Description: </b>Description for test step#2</span><br>
+					<span class="duration"><b>Duration: </b>1.015s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="654115ef-9444-4338-9895-c61790f3ed39" style="display: block;">
+												This is test Step 2<br>
+								</td>
+	</div>
+</tr>
+					  
 	</tbody>
 	</table>
 </div>
