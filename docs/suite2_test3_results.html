@@ -43,7 +43,7 @@
 	  </tr>
 	  	  <tr>
 	    <th>Total Time : </th>
-	    <th>00:00:02</th> 
+	    <th>00:00:01</th> 
 	  </tr>
 	  <tr>
 	    <th>Total Steps : </th>
@@ -77,25 +77,25 @@
 				
 												
 											<tr>
-	<td class="time">1557330609286</td>
+	<td class="time">1557404021899</td>
 	<td class="header failed" colspan="4">
-	<div style="float:left;">Class&nbsp;:&nbsp;org.uncommons.test.Test3_Skip</div>
-	<div style="float:right;">@Test&nbsp;Failed&nbsp;<span id='span-5b696307-09e9-49f8-b10e-cd10cb4daae2' class="glyphicon glyphicon-menu-down"></span></div>
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>org.uncommons.test.Test3_Skip</div>
+	<div style="float:right;">@Test&nbsp;&nbsp;<span id='span-3a9c9a66-4a7c-4ff6-87f2-038e33127f59' class="glyphicon glyphicon-menu-down"></span></div>
 	</td>
 	</tr>
 <tr>
-	<td class="time">1557330609286</td>
+	<td class="time">1557404021899</td>
 	<td class="methodTest">
 		<span class="description"><b>Method: </b>test2</span><br>
 			<span class="description"><b>Description: </b>Description for test step#2</span><br>
 				<span class="description"><b>Priority: </b><font color='blue'>2</font></span><br>
-				<span class="duration"><b>Duration: </b>1.042s</span><br>
+				<span class="duration"><b>Duration: </b>1.001s</span><br>
 	</td>
 	<td class="result">
-						<div class="noCollapse" id="5b696307-09e9-49f8-b10e-cd10cb4daae2" style="display: block;">
+						<div class="noCollapse" id="3a9c9a66-4a7c-4ff6-87f2-038e33127f59" style="display: block;">
 												This is test Step 2 and is going to fail<br>
-									<a href="javascript:toggleElement('exception-5b696307-09e9-49f8-b10e-cd10cb4daae2','block')" title="Click to expand/collapse"><b>java.lang.Exception: Assert Error 2</b></a><br/>
-		<div class="stackTrace" id="exception-5b696307-09e9-49f8-b10e-cd10cb4daae2">
+									<a href="javascript:toggleElement('exception-3a9c9a66-4a7c-4ff6-87f2-038e33127f59','block')" title="Click to expand/collapse"><b>java.lang.Exception: Assert Error 2</b></a><br/>
+		<div class="stackTrace" id="exception-3a9c9a66-4a7c-4ff6-87f2-038e33127f59">
 					org.uncommons.test.Test3_Skip.test2(Test3_Skip.java:20)<br/>
 					sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br/>
 					sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br/>
@@ -129,14 +129,14 @@
 </tr>
 						
 											<tr>
-	<td class="time">1557330610328</td>
+	<td class="time">1557404022902</td>
 	<td class="header skipped" colspan="4">
-	<div style="float:left;">Class&nbsp;:&nbsp;org.uncommons.test.Test3_Skip</div>
-	<div style="float:right;">@Test&nbsp;Skipped&nbsp;<span id='span-7f267c14-6125-4130-992c-03c3e1c4ae61' class="glyphicon glyphicon-menu-down"></span></div>
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>org.uncommons.test.Test3_Skip</div>
+	<div style="float:right;">@Test&nbsp;&nbsp;<span id='span-0d02a81e-0939-486d-8e6f-0fd9c6a05ba1' class="glyphicon glyphicon-menu-down"></span></div>
 	</td>
 	</tr>
 <tr>
-	<td class="time">1557330610328</td>
+	<td class="time">1557404022902</td>
 	<td class="methodTest">
 		<span class="description"><b>Method: </b>test3</span><br>
 			<span class="description"><b>Description: </b>Description for test step#3</span><br>
@@ -146,23 +146,45 @@
 	<td class="result">
 		 							<i>Depends on method(s): </i>
 			<span class="dependency">org.uncommons.test.Test3_Skip.test2</span>
-							<div class="stackTrace" id="7f267c14-6125-4130-992c-03c3e1c4ae61" style="display: block;">
+							<div class="stackTrace" id="0d02a81e-0939-486d-8e6f-0fd9c6a05ba1" style="display: block;">
 												==============================================================================================
 												Total Passed: 8(+1), Failures: 2(+1), Skips: 1(+1), Known: 0(+0), Fixed: 0(+0)
 												==============================================================================================
-								</td>
+									<a href="javascript:toggleElement('exception-0d02a81e-0939-486d-8e6f-0fd9c6a05ba1','block')" title="Click to expand/collapse"><b>java.lang.Throwable: Method Test3_Skip.test3()[pri:3, instance:org.uncommons.test.Test3_Skip@694e1548] depends on not successfully finished methods</b></a><br/>
+		<div class="stackTrace" id="exception-0d02a81e-0939-486d-8e6f-0fd9c6a05ba1">
+					org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)<br/>
+					org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br/>
+					org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:648)<br/>
+					org.testng.TestRunner.run(TestRunner.java:505)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:364)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1204)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1049)<br/>
+					org.testng.TestNG.run(TestNG.java:1017)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
 	</div>
 </tr>
 						
 												<tr>
-			<td class="time">1557330608313</td>
-			<td class="header passed" colspan="4" onClick="toggleElement('62e38bb2-9567-4142-b536-07e15fe943e4','block');changeSingleIcon('span-62e38bb2-9567-4142-b536-07e15fe943e4');" title="Click to expand/collapse" style="cursor: pointer;">
-			<div style="float:left;">Class&nbsp;:&nbsp;org.uncommons.test.Test3_Skip</div>
-			<div style="float:right;">@Test&nbsp;Passed&nbsp;<span id='span-62e38bb2-9567-4142-b536-07e15fe943e4' class="glyphicon glyphicon-menu-down"></span></div>
+			<td class="time">1557404020927</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('63e0a6fe-9acf-4430-8518-b5c1a7c6bc6f','block');changeSingleIcon('span-63e0a6fe-9acf-4430-8518-b5c1a7c6bc6f');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>org.uncommons.test.Test3_Skip</div>
+			<div style="float:right;">@Test&nbsp;&nbsp;<span id='span-63e0a6fe-9acf-4430-8518-b5c1a7c6bc6f' class="glyphicon glyphicon-menu-down"></span></div>
 			</td>
 			</tr>
 			<tr>
-	<td class="time">1557330608313</td>
+	<td class="time">1557404020927</td>
 	<td class="methodTest">
 		<span class="description"><b>Method: </b>test1</span><br>
 			<span class="description"><b>Description: </b>Description for test step#1</span><br>
@@ -170,7 +192,7 @@
 				<span class="duration"><b>Duration: </b>0.971s</span><br>
 	</td>
 	<td class="result">
-						<div class="stackTrace" id="62e38bb2-9567-4142-b536-07e15fe943e4" style="display: block;">
+						<div class="stackTrace" id="63e0a6fe-9acf-4430-8518-b5c1a7c6bc6f" style="display: block;">
 												This is test Step 1<br>
 								</td>
 	</div>

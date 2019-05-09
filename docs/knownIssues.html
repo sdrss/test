@@ -8,24 +8,48 @@
 	<script type="text/javascript" src="js/canvasjs.min.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/reportng.css" />
+	<script type="text/javascript">  
+    	$(document).ready(function () {  
+	            $('tr.parent')  
+	                .css("cursor", "pointer")  
+	                .attr("title", "Click to expand/collapse")  
+	                .click(function () {  
+	                    $(this).siblings('.child-' + this.id).toggle();  
+	                });
+	                $('tr.parent')  
+	                .css("cursor", "pointer")  
+	                .attr("title", "Click to expand/collapse")  
+	                .click();  
+	    });
+	    function changeIcon(elementId) {
+			if ($('#'+elementId).hasClass('glyphicon glyphicon-minus')){
+				$('#'+elementId).removeClass('glyphicon glyphicon-minus').toggleClass('glyphicon glyphicon-plus');
+			}else{
+				$('#'+elementId).removeClass('glyphicon glyphicon-plus').toggleClass('glyphicon glyphicon-minus');
+			}
+		}
+    </script>
 </head>
 <body>
 <h3 class="KnownDefectTitle">Known</h3>
 <div>
 		<div class="well well-large">
 	<h4>Regression Issues</h4>
-		<table class="table table-bordered">
+		<table class="table table-bordered" width="100%;">
 			<thead>
 				<tr>
-					<th scope="col" width="25%">Issues</th>
-					<th scope="col" width="25%">Suite Name</th>
-					<th scope="col" width="25%">Test Name</th>
-				  	<th scope="col" width="25%">Test Class</th>
+					<th scope="col" width="30px">#</th>
+					<th scope="col">Issue</th>
+					<th scope="col" colspan="2">Total Affected Tests</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-<td rowspan="1" style="vertical-align:middle" class="break-word">Jira Ticket 12345</td><td style="vertical-align:middle"><a href="suites_overview.html#Test ReportNG Suite 2">Test ReportNG Suite 2</a></td><td style="vertical-align:middle"><a href="suite2_test4_results.html">Test 4</a></td><td class="break-word" style="vertical-align:middle">org.uncommons.test.Test4_Known</td></tr>
+				<tr class="parent" id="row0" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-df3e0a28-962f-4029-ac09-fb666ffb8c14'); ">
+<td><span id="span-df3e0a28-962f-4029-ac09-fb666ffb8c14" class="glyphicon glyphicon-minus"></span></td>
+<td>Jira Ticket 12345</td><td>1</td></tr><tr class="child-row0" style="display: table-row;"><td></td><td><i>Suite Name</i></td><td><i>Test Name</i></td><td><i>Class Name</i></td></tr><tr class="child-row0" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 2">Test ReportNG Suite 2</a></td><td><a href="suite2_test4_results.html">Test 4</a></td><td class="break-word">org.uncommons.test.Test4_Known</td></tr>
+<tr class="parent" id="row1" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-1bb5c11c-391b-4cd1-a0e6-227bf30ce528'); ">
+<td><span id="span-1bb5c11c-391b-4cd1-a0e6-227bf30ce528" class="glyphicon glyphicon-minus"></span></td>
+<td>Jira Ticket 65878</td><td>1</td></tr><tr class="child-row1" style="display: table-row;"><td></td><td><i>Suite Name</i></td><td><i>Test Name</i></td><td><i>Class Name</i></td></tr><tr class="child-row1" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 5">Test ReportNG Suite 5</a></td><td><a href="suite4_test2_results.html">Test 2</a></td><td class="break-word">org.uncommons.test.Test8_Known</td></tr>
 
 			</tbody>
 		</table>
