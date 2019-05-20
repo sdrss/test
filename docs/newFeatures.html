@@ -5,7 +5,6 @@
 <head>
 	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/canvasjs.min.js"></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link href="css/reportng.css" rel="stylesheet" />
 	<script type="text/javascript">  
@@ -34,7 +33,7 @@
 <h3 class="normal">New Features</h3>
 <div>
 	<div class="well well-large">
-		<table class="table table-bordered" width="100%;">
+		<table class="table table-bordered" width="100%;" id="features">
 			<thead>
 				<tr>
 					<th scope="col" width="30px">#</th>
@@ -44,14 +43,14 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="parent" id="row1" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-572eb6e2-abba-46dd-bbab-ab756f8c9bfe'); ">
-<td><span id="span-572eb6e2-abba-46dd-bbab-ab756f8c9bfe" class="glyphicon glyphicon-minus"></span></td>
+				<tr class="parent" id="row1" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-f9b30955-b5a1-4ffb-9dc9-e9d653ea7f3c'); ">
+<td><span id="span-f9b30955-b5a1-4ffb-9dc9-e9d653ea7f3c" class="glyphicon glyphicon-minus" style="color:blue"></span></td>
 <td colspan="2" id="This is a new Feature">This is a new Feature</td><td colspan="1">3</td><td colspan="2"><font color="red">FAIL</font></td>
 </tr><tr class="child-row1" style="display: table-row;"><td></td><td><i>Suite Name</i></td><td><i>Test Name</i></td><td><i>Class Name</i></td><td><i>Tests</i></td></tr><tr class="child-row1" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 2">Test ReportNG Suite 2</a></td>
 <td><a href="suite2_test3_results.html">Test 3</a></td>
 <td class="break-word">org.uncommons.test.Test3_Skip</td>
 <td><div><table>
-<tr><th class="passed number" width="30px">Pass</th><th class="failed number" width="30px">Fail</th><th class="skipped number" width="30px">Skip</th><tr><td class="passed number" width="30px">1</td><td class="failed number" width="30px">1</td><td class="skipped number" width="30px">1</td></tr></table></div></td>
+<tr><td class="passed number" width="30px"><a href="suite2_test3_results.html">1</a></td><td class="failed number" width="30px"><a href="suite2_test3_results.html">1</a></td><td class="skipped number" width="30px"><a href="suite2_test3_results.html">1</a></td></tr></table></div></td>
 </tr>
 
 			</tbody>

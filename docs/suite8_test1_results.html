@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>Test 1</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>org.uncommons.stevia.SteviaIntegretionTest</th> 
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>Test ReportNG Suite 9</th> 
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>C:\Users\sokratis.sidereas\git\ReportNGTests\src\test\resources\TemplateTest9.xml</th> 
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th>00:00:06</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	    <th>2</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th><font color="green">PASS</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+												
+				
+				
+												<tr>
+			<td class="time">1558366144944</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('93719283-59e3-4c48-bd86-66a2a4f9b28c','block');changeSingleIcon('span-93719283-59e3-4c48-bd86-66a2a4f9b28c');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>org.uncommons.stevia.SteviaIntegretionTest</div>
+			<div style="float:right;">@Test&nbsp;&nbsp;<span id='span-93719283-59e3-4c48-bd86-66a2a4f9b28c' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1558366144944</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>test1</span><br>
+			<span class="description"><b>Description: </b>Description for test step#1</span><br>
+					<span class="duration"><b>Duration: </b>1.608s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="93719283-59e3-4c48-bd86-66a2a4f9b28c" style="display: block;">
+												Search Google<br>
+												<a href="../screenshots/screenshot-2958751393402115.png"><p align="left">Error screenshot at Mon May 20 18:29:06 EEST 2019</p>
+												<p><img width="1024" src="../screenshots/screenshot-2958751393402115.png" alt="screenshot at Mon May 20 18:29:06 EEST 2019"/></p></a><br />
+												<br>
+								</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1558366146565</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('0fb25ee4-28c4-4d5d-ab4c-c9393c162695','block');changeSingleIcon('span-0fb25ee4-28c4-4d5d-ab4c-c9393c162695');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>org.uncommons.stevia.SteviaIntegretionTest</div>
+			<div style="float:right;">@Test&nbsp;&nbsp;<span id='span-0fb25ee4-28c4-4d5d-ab4c-c9393c162695' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1558366146565</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>test2</span><br>
+			<span class="description"><b>Description: </b>Description for test step#2</span><br>
+					<span class="duration"><b>Duration: </b>0.008s</span><br>
+	</td>
+	<td class="result">
+						<div class="stackTrace" id="0fb25ee4-28c4-4d5d-ab4c-c9393c162695" style="display: block;">
+												Current Url is : https://www.google.com/search?source=hp&ei=wMfiXPaUEKyFwPAPzYOIkA4&q=reportNG&oq=reportNG&gs_l=psy-ab.12..0j0i30l7j0i10i30j0i30.326.359..547...0.0..0.119.449.1j3......0....1..gws-wiz.....0..0i131j0i10.lYJCQKWlKoA<br>
+								</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>

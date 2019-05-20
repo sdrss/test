@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link rel="stylesheet" href="css/reportng.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <script type="text/javascript" src="js/jquery-1.12.0.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/reportng.js"></script>
+  <script type="text/javascript">$(document).ready(function(){$('#features').tablesorter({});});</script>
+  <script type="text/javascript">  
+    	$(document).ready(function () {  
+	            $('tr.parent')  
+	                .css("cursor", "pointer")  
+	                .attr("title", "Click to expand/collapse")  
+	                .click(function () {  
+	                    $(this).siblings('.child-' + this.id).toggle();  
+	                });
+	                $('tr.parent')  
+	                .css("cursor", "pointer")  
+	                .attr("title", "Click to expand/collapse")  
+	                .click();  
+	    });
+	    function changeIcon(elementId) {
+			if ($('#'+elementId).hasClass('glyphicon glyphicon-minus')){
+				$('#'+elementId).removeClass('glyphicon glyphicon-minus').toggleClass('glyphicon glyphicon-plus');
+			}else{
+				$('#'+elementId).removeClass('glyphicon glyphicon-plus').toggleClass('glyphicon glyphicon-minus');
+			}
+		}
+    </script>
+</head>
+<body onload="return false;">
+<div class="row">
+	<div class="col-xs-12">
+	<h3 class="normal" style="float: left;">Package Results</h3><br>
+    </div>
+</div>
+<br>
+<div class="well well-large">
+<table class="table table-bordered" id="features">
+	<thead>
+   		<tr class="columnHeadings">
+   			<th scope="col" width="30px">#&nbsp;&nbsp;</th>
+   			<th scope="col" class="header">Package</th>
+   		 	<th scope="col" class="header" width="50px">Duration&nbsp;&nbsp;&nbsp;</th>
+   		 	<th scope="col" class="header" width="30px">Passed&nbsp;&nbsp;&nbsp;</th>
+    		<th scope="col" class="header" width="30px">Failed&nbsp;&nbsp;&nbsp;</th>
+    		<th scope="col" class="header" width="30px">Skipped&nbsp;&nbsp;&nbsp;</th>
+	    	<th scope="col" class="header" width="30px">Known&nbsp;&nbsp;&nbsp;</th>
+	    	<th scope="col" class="header" width="30px">Fixed&nbsp;&nbsp;&nbsp;</th>
+  		</tr>
+  	</thead>
+  	<tbody>
+  		<tr class="parent" id="row0" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-743c0f41-ec63-4c8f-9cbd-ea2640b9c840'); ">
+<td><span id="span-743c0f41-ec63-4c8f-9cbd-ea2640b9c840" class="glyphicon glyphicon-minus" style="color:blue"></span></td>
+<td align="left">org.uncommons.stevia</td><td align="center">00:00:06</td><td align="center" class="passed number">2</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td></tr>
+<tr class="child-row0" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.stevia.SteviaIntegretionTest</td><td align="center">00:00:06</td><td align="center" class="passed number">2</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><tr class="parent" id="row1" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-0d87a357-f9a0-4cdb-92e1-4112f44259c1'); ">
+<td><span id="span-0d87a357-f9a0-4cdb-92e1-4112f44259c1" class="glyphicon glyphicon-minus" style="color:blue"></span></td>
+<td align="left">org.uncommons.test</td><td align="center">00:00:34</td><td align="center" class="passed number">29</td><td align="center" class="failed number">3</td><td align="center" class="skipped number">2</td><td align="center" class="knownDefects number">2</td><td align="center" class="fixed number">2</td></tr>
+<tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test1</td><td align="center">00:00:02</td><td align="center" class="passed number">2</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test1</td><td align="center">00:00:02</td><td align="center" class="passed number">2</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test1</td><td align="center">00:00:02</td><td align="center" class="passed number">2</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test2_Failures</td><td align="center">00:00:02</td><td align="center" class="passed number">1</td><td align="center" class="failed number">1</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test3_Skip</td><td align="center">00:00:02</td><td align="center" class="passed number">1</td><td align="center" class="failed number">1</td><td align="center" class="skipped number">1</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test4_Known</td><td align="center">00:00:02</td><td align="center" class="passed number">1</td><td align="center" class="zero number">0</td><td align="center" class="skipped number">1</td><td align="center" class="knownDefects number">1</td><td align="center" class="zero number">0</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test5_Fixed</td><td align="center">00:00:02</td><td align="center" class="passed number">2</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="fixed number">1</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test6</td><td align="center">00:00:02</td><td align="center" class="passed number">2</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test6</td><td align="center">00:00:02</td><td align="center" class="passed number">2</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test7</td><td align="center">00:00:05</td><td align="center" class="passed number">5</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test1</td><td align="center">00:00:02</td><td align="center" class="passed number">2</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test8_Known</td><td align="center">00:00:02</td><td align="center" class="passed number">1</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="knownDefects number">1</td><td align="center" class="zero number">0</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test1</td><td align="center">00:00:02</td><td align="center" class="passed number">2</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test9</td><td align="center">00:00:03</td><td align="center" class="passed number">2</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="fixed number">1</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test10_Failures</td><td align="center">00:00:02</td><td align="center" class="passed number">1</td><td align="center" class="failed number">1</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><tr class="child-row1" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.test.Test10</td><td align="center">00:00:00</td><td align="center" class="passed number">1</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><tr class="parent" id="row2" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-23fc3f8f-0ca2-4d07-9392-0727f276d030'); ">
+<td><span id="span-23fc3f8f-0ca2-4d07-9392-0727f276d030" class="glyphicon glyphicon-minus" style="color:blue"></span></td>
+<td align="left">org.uncommons.regression</td><td align="center">00:00:02</td><td align="center" class="passed number">2</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td></tr>
+<tr class="child-row2" style="display: table-row;"><td></td><td>&nbsp;&nbsp;&nbsp;org.uncommons.regression.Test1</td><td align="center">00:00:02</td><td align="center" class="passed number">2</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td><td align="center" class="zero number">0</td>
+
+  	</tbody>
+</table>
+</div>
+</body>
+</html>

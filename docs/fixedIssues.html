@@ -5,7 +5,6 @@
 <head>
 	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/canvasjs.min.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css" />
 	<link rel="stylesheet" href="css/reportng.css" />
 	<script type="text/javascript">  
@@ -35,7 +34,7 @@
 <div>
 		<div class="well well-large">
 	<h4>Regression Issues</h4>
-		<table class="table table-bordered" width="100%;">
+		<table class="table table-bordered" width="100%;" id="features">
 			<thead>
 				<tr>
 					<th scope="col" width="30px">#</th>
@@ -44,12 +43,12 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="parent" id="row0" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-a50a7a97-43d5-453f-a410-9a8971fbdebd'); ">
-<td><span id="span-a50a7a97-43d5-453f-a410-9a8971fbdebd" class="glyphicon glyphicon-minus"></span></td>
-<td>Jira Ticket 78910</td><td>1</td></tr><tr class="child-row0" style="display: table-row;"><td></td><td><i>Suite Name</i></td><td><i>Test Name</i></td><td><i>Class Name</i></td></tr><tr class="child-row0" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 2">Test ReportNG Suite 2</a></td><td><a href="suite2_test5_results.html">Test 5</a></td><td class="break-word">org.uncommons.test.Test5_Fixed</td></tr>
-<tr class="parent" id="row1" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-75750865-3745-42fa-8323-f8f17fa18fb8'); ">
-<td><span id="span-75750865-3745-42fa-8323-f8f17fa18fb8" class="glyphicon glyphicon-minus"></span></td>
-<td>Jira Ticket 879545</td><td>1</td></tr><tr class="child-row1" style="display: table-row;"><td></td><td><i>Suite Name</i></td><td><i>Test Name</i></td><td><i>Class Name</i></td></tr><tr class="child-row1" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 6">Test ReportNG Suite 6</a></td><td><a href="suite5_test2_results.html">Test 2</a></td><td class="break-word">org.uncommons.test.Test9</td></tr>
+				<tr class="parent" id="row0" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-1e9044cc-a486-494f-8553-3b6b6878e849'); ">
+<td><span id="span-1e9044cc-a486-494f-8553-3b6b6878e849" class="glyphicon glyphicon-minus" style="color:blue"></span></td>
+<td>Jira Ticket 78910</td><td>1</td><td></td></tr><tr class="child-row0" style="display: table-row;"><td></td><td><i>Suite Name</i></td><td><i>Test Name</i></td><td><i>Class Name</i></td></tr><tr class="child-row0" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 2">Test ReportNG Suite 2</a></td><td><a href="suite2_test5_results.html">Test 5</a></td><td class="break-word">org.uncommons.test.Test5_Fixed</td></tr>
+<tr class="parent" id="row1" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-a9284398-540b-4d75-9626-43eb5876808f'); ">
+<td><span id="span-a9284398-540b-4d75-9626-43eb5876808f" class="glyphicon glyphicon-minus" style="color:blue"></span></td>
+<td>Jira Ticket 879545</td><td>1</td><td></td></tr><tr class="child-row1" style="display: table-row;"><td></td><td><i>Suite Name</i></td><td><i>Test Name</i></td><td><i>Class Name</i></td></tr><tr class="child-row1" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 6">Test ReportNG Suite 6</a></td><td><a href="suite5_test2_results.html">Test 2</a></td><td class="break-word">org.uncommons.test.Test9</td></tr>
 
 			</tbody>
 	</table>

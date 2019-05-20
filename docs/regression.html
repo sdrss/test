@@ -5,7 +5,6 @@
 <head>
 	<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/canvasjs.min.js"></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet" />
 	<link href="css/reportng.css" rel="stylesheet" />
 	<script type="text/javascript">  
@@ -34,7 +33,7 @@
 <h3 class="normal">Regression</h3>	
 <div>	
 	<div class="well well-large">
-		<table class="table table-bordered" width="100%;">
+		<table class="table table-bordered" width="100%;" id="features">
 			<thead>
 				<tr>
 					<th scope="col" width="30px">#</th>
@@ -44,59 +43,71 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class="parent" id="row1" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-3644a811-4532-4b39-9ee0-1b548acd52cf'); ">
-<td><span id="span-3644a811-4532-4b39-9ee0-1b548acd52cf" class="glyphicon glyphicon-minus"></span></td>
+				<tr class="parent" id="row1" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-f1cb5d24-805d-43ad-bf0a-a530f3801322'); ">
+<td><span id="span-f1cb5d24-805d-43ad-bf0a-a530f3801322" class="glyphicon glyphicon-minus" style="color:blue"></span></td>
 <td colspan="2" id="Feature A">Feature A</td><td colspan="1">4</td><td colspan="2"><font color="green">PASS</font></td>
 </tr><tr class="child-row1" style="display: table-row;"><td></td><td><i>Suite Name</i></td><td><i>Test Name</i></td><td><i>Class Name</i></td><td><i>Tests</i></td></tr><tr class="child-row1" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 4">Test ReportNG Suite 4</a></td>
 <td><a href="suite3_test1_results.html">Test 3</a></td>
 <td class="break-word">org.uncommons.test.Test6</td>
 <td><div><table>
-<tr><th class="passed number" width="30px">Pass</th><tr><td class="passed number" width="30px">2</td></tr></table></div></td>
+<tr><td class="passed number" width="30px"><a href="suite3_test1_results.html">2</a></td></tr></table></div></td>
 </tr>
 <tr class="child-row1" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 4">Test ReportNG Suite 4</a></td>
 <td><a href="suite3_test2_results.html">Test 1</a></td>
 <td class="break-word">org.uncommons.test.Test6</td>
 <td><div><table>
-<tr><th class="passed number" width="30px">Pass</th><tr><td class="passed number" width="30px">2</td></tr></table></div></td>
+<tr><td class="passed number" width="30px"><a href="suite3_test2_results.html">2</a></td></tr></table></div></td>
 </tr>
-<tr class="parent" id="row2" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-752ff26c-106f-4f67-92e5-8b72effe4a80'); ">
-<td><span id="span-752ff26c-106f-4f67-92e5-8b72effe4a80" class="glyphicon glyphicon-minus"></span></td>
-<td colspan="2" id="Feature B">Feature B</td><td colspan="1">13</td><td colspan="2"><font color="blue">FIXED</font></td>
+<tr class="parent" id="row2" title="Click to expand/collapse" style="cursor: pointer;" onclick="changeIcon('span-65bda631-9ffd-45c3-84ea-387820a92fc6'); ">
+<td><span id="span-65bda631-9ffd-45c3-84ea-387820a92fc6" class="glyphicon glyphicon-minus" style="color:blue"></span></td>
+<td colspan="2" id="Feature B">Feature B</td><td colspan="1">16</td><td colspan="2"><font color="blue">FIXED</font></td>
 </tr><tr class="child-row2" style="display: table-row;"><td></td><td><i>Suite Name</i></td><td><i>Test Name</i></td><td><i>Class Name</i></td><td><i>Tests</i></td></tr><tr class="child-row2" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 1">Test ReportNG Suite 1</a></td>
 <td><a href="suite1_test1_results.html">Test1</a></td>
 <td class="break-word">org.uncommons.test.Test1</td>
 <td><div><table>
-<tr><th class="passed number" width="30px">Pass</th><tr><td class="passed number" width="30px">2</td></tr></table></div></td>
+<tr><td class="passed number" width="30px"><a href="suite1_test1_results.html">2</a></td></tr></table></div></td>
 </tr>
 <tr class="child-row2" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 1">Test ReportNG Suite 1</a></td>
 <td><a href="suite1_test2_results.html">Test2</a></td>
 <td class="break-word">org.uncommons.test.Test1</td>
 <td><div><table>
-<tr><th class="passed number" width="30px">Pass</th><tr><td class="passed number" width="30px">2</td></tr></table></div></td>
+<tr><td class="passed number" width="30px"><a href="suite1_test2_results.html">2</a></td></tr></table></div></td>
 </tr>
 <tr class="child-row2" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 2">Test ReportNG Suite 2</a></td>
 <td><a href="suite2_test1_results.html">Test 1</a></td>
 <td class="break-word">org.uncommons.test.Test1</td>
 <td><div><table>
-<tr><th class="passed number" width="30px">Pass</th><tr><td class="passed number" width="30px">2</td></tr></table></div></td>
+<tr><td class="passed number" width="30px"><a href="suite2_test1_results.html">2</a></td></tr></table></div></td>
 </tr>
 <tr class="child-row2" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 5">Test ReportNG Suite 5</a></td>
 <td><a href="suite4_test1_results.html">Test 1</a></td>
 <td class="break-word">org.uncommons.test.Test1</td>
 <td><div><table>
-<tr><th class="passed number" width="30px">Pass</th><tr><td class="passed number" width="30px">2</td></tr></table></div></td>
+<tr><td class="passed number" width="30px"><a href="suite4_test1_results.html">2</a></td></tr></table></div></td>
 </tr>
 <tr class="child-row2" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 6">Test ReportNG Suite 6</a></td>
 <td><a href="suite5_test1_results.html">Test 1</a></td>
 <td class="break-word">org.uncommons.test.Test1</td>
 <td><div><table>
-<tr><th class="passed number" width="30px">Pass</th><tr><td class="passed number" width="30px">2</td></tr></table></div></td>
+<tr><td class="passed number" width="30px"><a href="suite5_test1_results.html">2</a></td></tr></table></div></td>
 </tr>
 <tr class="child-row2" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 6">Test ReportNG Suite 6</a></td>
 <td><a href="suite5_test2_results.html">Test 2</a></td>
 <td class="break-word">org.uncommons.test.Test9</td>
 <td><div><table>
-<tr><th class="passed number" width="30px">Pass</th><th class="fixed number" width="30px">Fixed</th></tr><tr><td class="passed number" width="30px">2</td><td class="fixed number" width="30px">1</td></tr></table></div></td>
+<tr><td class="passed number" width="30px"><a href="suite5_test2_results.html">2</a></td><td class="fixed number" width="30px"><a href="suite5_test2_results.html">1</a></td></tr></table></div></td>
+</tr>
+<tr class="child-row2" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 8">Test ReportNG Suite 8</a></td>
+<td><a href="suite7_test1_results.html">Test 1</a></td>
+<td class="break-word">org.uncommons.regression.Test1</td>
+<td><div><table>
+<tr><td class="passed number" width="30px"><a href="suite7_test1_results.html">2</a></td></tr></table></div></td>
+</tr>
+<tr class="child-row2" style="display: table-row;"><td></td><td><a href="suites_overview.html#Test ReportNG Suite 10">Test ReportNG Suite 10</a></td>
+<td><a href="suite9_test1_results.html">Test1</a></td>
+<td class="break-word">org.uncommons.test.Test10</td>
+<td><div><table>
+<tr><td class="passed number" width="30px"><a href="suite9_test1_results.html">1</a></td></tr></table></div></td>
 </tr>
 
 			</tbody>
